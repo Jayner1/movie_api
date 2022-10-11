@@ -1,0 +1,19 @@
+URL: /
+Timestamp: Thu Aug 25 2022 10:50:11 GMT-0700 (Pacific Daylight Time)
+
+URL: /css/styles.css
+Timestamp: Thu Aug 25 2022 10:50:11 GMT-0700 (Pacific Daylight Time)
+
+URL: /favicon.ico
+Timestamp: Thu Aug 25 2022 10:50:11 GMT-0700 (Pacific Daylight Time)
+
+URL: /documentation/
+Timestamp: Thu Aug 25 2022 10:50:47 GMT-0700 (Pacific Daylight Time)
+
+URL: /documentation/css/styles.css
+Timestamp: Thu Aug 25 2022 10:50:47 GMT-0700 (Pacific Daylight Time)
+
+URL: /favicon.ico
+Timestamp: Thu Aug 25 2022 10:50:47 GMT-0700 (Pacific Daylight Time)
+
+::1 - - [01/Sep/2022:17:33:36 +0000] "GET /documentation HTTP/1.1" 404 152 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
