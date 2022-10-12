@@ -300,3 +300,5 @@ app.listen(port, '0.0.0.0',() => {
 
 // process.env.CONNECTION_URI
 // mongodb://localhost:27017
+
+// mongodb+srv://myflix14:jayner14@myflix14.6bqfhv4.mongodb.net/myFlixDB?retryWrites=true&w=majority
