@@ -297,3 +297,6 @@ const port = process.env.PORT || 8080;
 app.listen(port, '0.0.0.0',() => {
  console.log('Listening on Port ' + port);
 });
+
+// process.env.CONNECTION_URI
+// mongodb://localhost:27017
