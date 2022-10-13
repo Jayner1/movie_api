@@ -302,3 +302,9 @@ app.listen(port, '0.0.0.0',() => {
 // mongodb://localhost:27017
 
 // mongodb+srv://myflix14:jayner14@myflix14.6bqfhv4.mongodb.net/myFlixDB?retryWrites=true&w=majority
+
+// mongoimport --uri mongodb+srv://myflix14:jayner14@myflix14.6bqfhv4.mongodb.net/myflix14 --collection movies --type json --file ../Documents/movies.json
+
+// mongoimport --uri mongodb+srv://myflix14:Superman%401@myflix14.6bqfhv4.mongodb.net/myflix14 --collection movies --type json --file ../Documents/movies.json
+
+// mongodb+srv://myflix14:Superman%401@myflix14.6bqfhv4.mongodb.net/myflix14?retryWrites=true&w=majority
