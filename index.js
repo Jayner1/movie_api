@@ -3,9 +3,10 @@ const express = require('express'),
 	bodyParser = require('body-parser'),
 	uuid = require('uuid'),
 	morgan = require('morgan'),
-	mongoose = require('mongoose')
-  const bcrypt = require('bcrypt'),
-	Models = require('./models.js');
+	mongoose = require('mongoose'),
+  bcrypt = require('bcrypt'),	
+  
+  Models = require('./models.js');
   const { check, validationResult } = require('express-validator');
 
   const Movies = Models.Movie,
@@ -13,7 +14,7 @@ const express = require('express'),
 
   const cors = require('cors');
   app.use(cors());
-  
+
 let auth = require('./auth')(app);
 app.use(bodyParser.json());
 app.use(morgan('common'));
