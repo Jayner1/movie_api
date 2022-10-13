@@ -13,7 +13,7 @@ const express = require('express'),
 
   const cors = require('cors');
   app.use(cors());
-
+let auth = require('./auth')(app);
 app.use(bodyParser.json());
 app.use(morgan('common'));
 
@@ -22,7 +22,6 @@ mongoose.connect( process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifie
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-let auth = require('./auth')(app);
 const passport = require('passport');
 require('./passport');
 
