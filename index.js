@@ -5,7 +5,6 @@ const express = require('express'),
 	morgan = require('morgan'),
 	mongoose = require('mongoose'),
 	Models = require('./models.js');
-  const bcrypt = require('bcrypt');
   const { check, validationResult } = require('express-validator');
 
   const Movies = Models.Movie,
