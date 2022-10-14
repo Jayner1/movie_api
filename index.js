@@ -9,6 +9,7 @@ const express = require('express'),
   Models = require('./models.js');
   const { check, validationResult } = require('express-validator');
 
+  dotenv.config({ path: './config.env' });
   const Movies = Models.Movie,
 	Users = Models.User;
 
