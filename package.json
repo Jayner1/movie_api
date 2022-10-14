@@ -25,6 +25,7 @@
     "debug": "^4.3.4",
     "deep-is": "^0.1.4",
     "doctrine": "^3.0.0",
+    "dotenv": "^16.0.3",
     "escape-string-regexp": "^4.0.0",
     "eslint-scope": "^7.1.1",
     "eslint-utils": "^3.0.0",
