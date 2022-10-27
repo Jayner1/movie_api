@@ -97,7 +97,7 @@ app.get('/',(req,res) => {
   res.send('Welcome to MyFlix!');
 });
 
-app.get('/movies', passport.authenticate('jwt', { session: false }), (req, res) => {
+app.get('/movies', (req, res) => {
 		Movies.find()
 			.then((movies) => {
 				res.status(200).json(movies);
@@ -313,3 +313,5 @@ app.listen(port, '0.0.0.0',() => {
 // mongoimport --uri mongodb+srv://myflix14:Superman%401@myflix14.6bqfhv4.mongodb.net/myflix14 --collection movies --type json --file ../Documents/movies.json
 
 // mongodb+srv://myflix14:Superman%401@myflix14.6bqfhv4.mongodb.net/myflix14?retryWrites=true&w=majority
+
+// passport.authenticate('jwt', { session: false }), ADD BACK TO GET MOVIES
