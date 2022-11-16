@@ -97,7 +97,7 @@ app.get('/',(req,res) => {
   res.send('Welcome to MyFlix!');
 });
 
-app.get('/movies', (req, res) => {
+app.get('/movies', passport.authenticate('jwt', { session: false }),(req, res) => {
 		Movies.find()
 			.then((movies) => {
 				res.status(200).json(movies);
@@ -107,8 +107,6 @@ app.get('/movies', (req, res) => {
 				res.status(500).send('Error: ' + err);
 			});
 	});
-
-  // passport.authenticate('jwt', { session: false })
 
 //read
 app.get('/users', passport.authenticate('jwt', { session: false }),(req, res) => {
