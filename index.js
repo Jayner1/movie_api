@@ -14,6 +14,8 @@ const express = require('express'),
 	Users = Models.User;
 
   const cors = require('cors');
+  // let allowedOrigins = ['http://localhost:8080', 'http://testsite.com', 'http://localhost:1234', 'https://myflix14.netlify.app'];
+  
   app.use(cors());
 
 let auth = require('./auth')(app);
