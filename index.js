@@ -166,6 +166,7 @@ app.post('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { sess
   });
 });
 
+// MAYBE THE PROBLEM?
 app.put('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { session: false }),(req, res) => {
   Users.findOneAndUpdate({ Username: req.params.Username }, {
      $push: { FavoriteMovies: req.params.MovieID }
