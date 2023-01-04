@@ -166,6 +166,21 @@ app.post('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { sess
   });
 });
 
+app.put('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { session: false }),(req, res) => {
+  Users.findOneAndUpdate({ Username: req.params.Username }, {
+     $push: { FavoriteMovies: req.params.MovieID }
+   },
+   { new: true }, // This line makes sure that the updated document is returned
+  (err, updatedUser) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send('Error: ' + err);
+    } else {
+      res.json(updatedUser);
+    }
+  });
+});
+
 //update
   app.put('/users/:Username', passport.authenticate('jwt', { session: false }),[
     check("Username", "Username is required").isLength({ min: 5 }),
